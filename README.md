@@ -1,6 +1,6 @@
 # Flask-MongoDB Web App
 
-In this assignment you will create a web app that relies upon a MongoDB database.
+This was a web application created as a class project at NYU. 
 
 ## App Info
 
@@ -10,23 +10,18 @@ Bitcoin Price App
 ### Simple Description: 
 Our web app allows you to create an account, post in a forum, and view historical bitcoin price data. These functions are all user-friendly and use NYU's mondodb database funtionality. 
 
-### Links to i6: 
-1. [John-Christian Foster](https://i6.cims.nyu.edu/~jcf480/web-app-cat-jc/flask.cgi/)
-2. [Catherine Benge](https://i6.cims.nyu.edu/~cgb355/web-app-cat-jc/flask.cgi/)
+### Link to application
+2. [Click Here](https://i6.cims.nyu.edu/~cgb355/web-app-cat-jc/flask.cgi/)
 
 ## Collaborators
 
 Name: Catherine Benge
-
-NetID: cgb355
 
 Github: @catherinebenge
 
 <br>
 
 Name: John-Christian Watson Foster
-
-NetID: jcf480
 
 Github: @fosterj101
 
