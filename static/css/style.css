@@ -1,0 +1,109 @@
+body{
+  color: #2A2B2B;
+  margin:0;
+  font-family: Arial, sans-serif;
+}
+
+
+header{
+    background-color: #253262;
+    color:white;
+}
+
+#nav{
+    padding:1px 0px 0px 30px;
+    background-color: #253262;
+    border-bottom: 2px solid;
+}
+
+#nav a, #home a{
+    color:white;
+    text-decoration: none;
+     padding: 0px 2%;
+}
+
+#nav a:hover #home a:hover{
+    color:gold;
+}
+
+main{
+     min-height: calc(70vh - 50px);
+}
+
+header,
+footer
+{
+  padding: 10px;
+}
+
+main {
+  border-bottom: 2px solid;
+  margin-bottom: 5px;
+  padding: 20px;
+  
+}
+
+p.post {
+  font-size: 12px;
+}
+
+footer {
+  margin-bottom: 5px;
+}
+
+#logo{
+    width:50px;
+    float:left;
+    padding:12px;
+}
+
+table{
+  border-collapse: collapse;
+  width:90%;
+  margin:0% 5%;
+}
+
+td, th{
+  border: 1px lightgrey;
+  padding:10px;
+}
+
+table tr:nth-child(odd){background-color:#DCDCDC}
+
+th {
+  padding: 12px 10px;
+  text-align:left;
+  background-color: #253262;
+  color:white;
+}
+
+.forum{
+  padding:20px;
+  font-size:15px;
+}
+
+input, button{
+  border:1px solid black;
+  background-color: white;
+  padding: 2px;
+  font-size:12px;
+}
+
+#avatar{
+  width:50px;
+}
+
+.user{
+  font-size: 15px;
+  padding:20px;
+}
+
+.user:nth-child(odd){background-color:#F3F3F3}
+
+.left{
+  float:left;
+  padding:5px;
+}
+.right{
+  padding:0px 150px;
+}

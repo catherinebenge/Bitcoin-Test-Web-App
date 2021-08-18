@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block container %}
+<h2>Create</h2>
+<p>Create a user. Click submit when you're done.</p>
+
+<form method="POST" action="{{ url_for('create_user') }}">
+  <p>
+    <label for="username">Username:</label> 
+    <input type="text" id="username" name="username">
+  </p>
+  <p>
+    <label for="first_name">First name:</label> 
+    <input type="text" id="first_name" name="first_name">
+  </p>
+  <p>
+   <label for="last_name">Last name:</label> 
+   <input type="text"  id="last_name" name="last_name">
+  </p>
+  <p>
+   <label for="email">Email:</label>
+   <input type="text" id="email" name="email">
+  </p>
+  <p>
+   <button type="submit">Post</button>
+  </p>
+</form>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<h2>Active Users Database</h2>
+<p> On this page you can view active users in our directory as well as update and delete user parameters.
+        
+    {% for user in users %}
+    <div>
+        <hr class="solid">
+        <p class="post">
+            Created by {{user.username}} at {{user.created_at}}
+        </p>
+    <div class="user">
+        <div class="left">
+            <img id="avatar" src="../images/user.png">
+            <p class="post">{{user.username}}</p>
+            <a href="{{ url_for('edit',mongoid=user._id)}}">Edit</a> | <a href="{{ url_for('delete',mongoid=user._id)}}">Delete</a> 
+        </div>
+        <div class="right">
+            <p>First Name: {{user.first_name}}</p>
+            <p>Last Name: {{user.last_name}}</p>
+            <p>Email: {{user.email}}</p>
+        </div>
+        
+    </div>
+    </div>
+    {%endfor%}
+</p>
+
+{% endblock %}

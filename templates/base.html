@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bitcoin Price App</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <a id="home" href="{{ url_for('home')}}"><header>
+        <img id="logo" src="../images/bitcoin_logo.png">
+        <h1>Bitcoin Price App</h1>
+      </header></a>
+      <div id="nav">
+        <p>
+          <a href="{{ url_for('read')}}">User Directory</a> 
+          <a href="{{ url_for('create')}}">Create Account</a>
+          <a href="{{url_for('forum')}}">Forum</a>
+          <a href="{{ url_for('display')}}">Historical Price Data</a>
+        </p>
+      </div>
+      <main>{% block container %} {% endblock %}
+            
+      </main>
+      <footer>
+        <p>
+          The source code for this app is
+          <a href="https://github.com/database-design-assignments/web-app-cat-jc"
+            >available on Github</a
+          >.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

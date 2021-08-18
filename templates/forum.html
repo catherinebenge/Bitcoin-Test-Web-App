@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<h2>Community Forum</h2>
+<div class="forum">
+    <form method="POST" action="{{ url_for('create_post') }}">
+        <label for="cars">Choose User:</label>
+        <select name="user" id="user">
+            {% for user in users %}
+            <option value={{user.username}}>{{user.username}}</option>
+            {%endfor%}
+        </select>
+        <br>
+        <p>
+            <label for="message">Write Message:</label>
+        <textarea type="text" id="message" name="message" placeholder="Start Typing..." cols="30" rows="1"></textarea>
+        </p>
+        <input type="submit" value="Submit">
+    </form>
+    </div>  
+    <p>
+    {% for post in posts %}
+        <div>
+            <hr class="solid">
+            <p class="post">
+                Posted by {{post.user}} at {{post.created_at}}
+            <p>
+            <p>
+                {{post.message}}
+            </p>
+        </div>
+    {%endfor%}
+    </p>
+{% endblock %}
